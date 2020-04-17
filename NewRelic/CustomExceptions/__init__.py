@@ -1,2 +1,2 @@
 class ArgumentException(Exception):
-    pass
+    message = 'Error: invalid arguments'

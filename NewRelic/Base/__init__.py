@@ -43,10 +43,7 @@ class BaseNewRelic:
         """
         pass
 
-    def get_data(self):
-        pass
-
-    def fetch_data(self, url, options = {}):
+    def get_data(self, url, options = {}):
         try:
             response = requests.get(url, headers=self.headers, data=options)
             if response.status_code == 200:
@@ -56,6 +53,9 @@ class BaseNewRelic:
         except Exception as ex:
             self.handle_exception(ex)
             return None
+
+    def fetch_data(self):
+        pass
 
     def post_data(self, url, data = {}):
         try:

@@ -8,7 +8,7 @@ class Users(BaseNewRelic):
         returns a list of User objects
         """
         url = self.BASE_URI + '/users.json'
-        return super().fetch_data(url, options=options)
+        return super().get_data(url, options=options)
 
     def show(self, id, options = {}):
         """
@@ -18,6 +18,6 @@ class Users(BaseNewRelic):
             if id is None:
                 raise ArgumentException
             url = self.BASE_URI + '/users/{0}.json'.format(id)
-            return super().fetch_data(url, options=options)
+            return super().get_data(url, options=options)
         except ArgumentException as ae:
             print(ae)
