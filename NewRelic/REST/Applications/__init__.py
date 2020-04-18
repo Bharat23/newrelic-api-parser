@@ -9,3 +9,17 @@ class Applications(BaseNewRelic):
         """
         url = self.BASE_URI + '/applications.json'
         return super().get_data(url, options=options)
+
+    def show(self, app_id):
+        """
+        fetch single application data
+        """
+        url = self.BASE_URI + '/applcations/{0}.json'.format(app_id)
+        return super().get_data(url)
+
+    def dele(self, app_id):
+        """
+        fetch single application data
+        """
+        url = self.BASE_URI + '/applcations/{0}.json'.format(app_id)
+        return super().delete(url, app_id)

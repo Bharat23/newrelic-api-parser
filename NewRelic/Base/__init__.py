@@ -37,11 +37,15 @@ class BaseNewRelic:
         """
         pass
 
-    def delete(self):
+    def delete(self, url):
         """
         override with your implementation to delete
         """
-        pass
+        try:
+            response = requests.delete(url)
+        except Exception as ex:
+            self.handle_exception(ex)
+            return None
 
     def get_data(self, url, options = {}):
         try:

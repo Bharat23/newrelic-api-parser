@@ -1,4 +1,5 @@
 import unittest
+import os
 
 from NewRelic import Config
 from NewRelic.REST.BrowserApplications import BrowserApplications
@@ -6,9 +7,11 @@ from NewRelic.REST.BrowserApplications import BrowserApplications
 class BrowserApplicationTest(unittest.TestCase):
 
     def test_list(self):
-        Config.API_KEY = 'decb73771a6fc514b98ca9ba594b1accd305b3412884db6'
+        """Should not return None"""
+        self.shortDescription()
+        Config.API_KEY = os.environ.get('NEWRELIC_API_KEY')
         browser_application = BrowserApplications()
         self.assertNotEqual(browser_application.get_list(), None) 
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(verbosity=2)
