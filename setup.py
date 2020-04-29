@@ -18,5 +18,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.7',
+    python_requires='>=3.6',
 )
+
+# curl -H "Accept: application/json" -H "X-Query-Key: a5dddf11c60833e89fd73b39e59438456aea2b0e0477d99" "https://insights-api.newrelic.com/v1/accounts/1690570/query?nrql=SELECT%20count(*)%20FROM%20PageView%20SINCE%2030%20MINUTES%20AGO%20COMPARE%20WITH%201%20WEEK%20AGO%20TIMESERIES"

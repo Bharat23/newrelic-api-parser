@@ -3,6 +3,9 @@ from NewRelic.CustomExceptions import ArgumentException
 
 class BrowserApplications(BaseNewRelic):
 
+    def __init__(self, API_KEY):
+        super().__init__(API_KEY)
+
     def get_list(self):
         """
         fetch the browser applications for new relic

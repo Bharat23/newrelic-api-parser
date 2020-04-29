@@ -7,9 +7,9 @@ logger = logging.getLogger()
 
 class BaseNewRelic:
 
-    def __init__(self):
+    def __init__(self, API_KEY):
         self.headers = {
-            "X-Api-Key": Config.API_KEY
+            "X-Api-Key": API_KEY
         }
         self.BASE_URI = Config.BASE_URI
 

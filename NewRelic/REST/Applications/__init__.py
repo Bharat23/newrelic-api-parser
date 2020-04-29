@@ -3,6 +3,9 @@ from NewRelic.CustomExceptions import ArgumentException
 
 class Applications(BaseNewRelic):
 
+    def __init__(self, API_KEY):
+        super().__init__(API_KEY)
+
     def get_list(self, options = {}):
         """
         fetch the apm applications for new relic

@@ -3,6 +3,9 @@ from NewRelic.CustomExceptions import ArgumentException
 
 class Users(BaseNewRelic):
 
+    def __init__(self, API_KEY):
+        super().__init__(API_KEY)
+
     def get_list(self, options = {}):
         """
         returns a list of User objects
