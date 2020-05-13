@@ -31,7 +31,7 @@
     .query(<account_id>, nrql='SELECT * from PageView')
     ```
 
-## Available Methods
+### Available Methods
 
 - For REST APIs
 
@@ -50,8 +50,8 @@
 | Insights | query | account_id, nrql | execute the passed new relic query and return the data
 
 
-## Reference
+### Reference
 - Please refer the official New Relic Documentation for more details on the endpoints
 
-## Note:
+### Note:
  - The package is under development and will be prone to more frequent updates

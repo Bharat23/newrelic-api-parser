@@ -3,7 +3,7 @@ import setuptools
 setuptools.setup(
     name="newrelic-api-parser",
     package=['newrelic-api-parser'],
-    version="0.0.3",
+    version="0.0.6",
     author="Bharat Sinha",
     author_email="bharat.sinha.2307@gmail.com",
     description="A plug-n-play package to start using new relic APIs for data gathering",
