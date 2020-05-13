@@ -4,12 +4,12 @@ from urllib import parse
 
 class Insights(BaseNewRelic):
 
-    def __init__(self, query_key):
+    def __init__(self, query_key: str):
         super().__init__()
         self.BASE_URI = Config.BASE_INSIGHTS_URI
         self.headers['X-Query-Key'] = query_key
 
-    def query(self, account_id, nrql):
+    def query(self, account_id: str, nrql: str) -> dict:
         """
         return the insights query data
         """

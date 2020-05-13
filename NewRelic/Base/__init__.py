@@ -7,7 +7,7 @@ logger = logging.getLogger()
 
 class BaseNewRelic:
 
-    def __init__(self, API_KEY = None):
+    def __init__(self, API_KEY: str = None):
         self.headers = {
             "X-Api-Key": API_KEY
         }
@@ -37,7 +37,7 @@ class BaseNewRelic:
         """
         pass
 
-    def delete(self, url):
+    def delete(self, url: str):
         """
         override with your implementation to delete
         """
@@ -47,7 +47,7 @@ class BaseNewRelic:
             self.handle_exception(ex)
             return None
 
-    def get_data(self, url, options = {}):
+    def get_data(self, url: str, options: dict = {}):
         try:
             response = requests.get(url, headers=self.headers, data=options)
             if response.status_code == 200:
@@ -61,7 +61,7 @@ class BaseNewRelic:
     def fetch_data(self):
         pass
 
-    def post_data(self, url, data = {}):
+    def post_data(self, url: str, data: dict = {}):
         try:
             response = requests.post(url, headers=self.headers, data = data)
             if response.status_code == 200:
