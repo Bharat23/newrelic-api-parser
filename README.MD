@@ -50,8 +50,8 @@
 | Insights | query | account_id, nrql | execute the passed new relic query and return the data
 
 
-### Reference
-- Please refer the official New Relic Documentation for more details on the endpoints
+## Reference
+- Please refer the [official New Relic Documentation](https://docs.newrelic.com/docs/apis/rest-api-v2/getting-started/introduction-new-relic-rest-api-v2) for more details on the endpoints
 
 ### Note:
  - The package is under development and will be prone to more frequent updates
