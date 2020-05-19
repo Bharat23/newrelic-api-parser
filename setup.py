@@ -16,7 +16,7 @@ except IOError:
 setuptools.setup(
     name="newrelic-api-parser",
     package=['newrelic-api-parser'],
-    version="0.0.6",
+    version="0.0.7",
     author="Bharat Sinha",
     author_email="bharat.sinha.2307@gmail.com",
     description=description,

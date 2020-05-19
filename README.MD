@@ -37,11 +37,14 @@
 
 | Class | Method | Params | Description |
 | --- | --- | --- | --- |
+| Applications | get_list | N.A. | return the list of apm applications
+| Applications | show | app_id | returns the detail of an application based on the app id passed
+| Applications | delete | app_id | delete an apm app on new relic based on the app id passed
+| AlertsEvents | get_list | N.A. | return the list of alert events
 | BrowserApplications | get_list | N.A. | return the list of browser applications
 | BrowserApplications | create | browser_application_name | returns the detail of a browser application based on the application name passed
-| Applications | get_list | N.A. | return the list of apm applications
-| Applications | show | app_id | returns the detail of a an application based on the app id passed
-| Applications | delete | app_id | delete an apm app on new relic based on the app id passed
+| Plugins | get_list | N.A. | return the list of plugins
+| Plugins | show | app_id | returns the detail of a plugin based on the app id passed
 
 - For Insights API
 
