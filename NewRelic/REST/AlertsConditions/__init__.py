@@ -9,5 +9,6 @@ class AlertsConditions(BaseNewRelic):
         """
         fetch the alert conditions for new relic
         """
+        options['policy_id'] = policy_id
         url = self.BASE_URI + '/alerts_conditions.json'
         return super().get_data(url, options=options)
