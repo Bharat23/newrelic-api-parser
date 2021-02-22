@@ -37,6 +37,8 @@
 
 | Class | Method | Params | Description |
 | --- | --- | --- | --- |
+| AlertsConditions | get_list | policy_id | return the list of alert conditions for the provided policy id
+| AlertsPolicies | get_list | N.A. | return the list of policies for the alerts
 | Applications | get_list | N.A. | return the list of apm applications
 | Applications | show | app_id | returns the detail of an application based on the app id passed
 | Applications | delete | app_id | delete an apm app on new relic based on the app id passed
