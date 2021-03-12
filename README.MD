@@ -38,11 +38,12 @@
 | Class | Method | Params | Description |
 | --- | --- | --- | --- |
 | AlertsConditions | get_list | policy_id | return the list of alert conditions for the provided policy id
+| AlertsEvents | get_list | N.A. | return the list of alert events
 | AlertsPolicies | get_list | N.A. | return the list of policies for the alerts
+| AlertsViolation | get_list | N.A. | return the list of alert violations
 | Applications | get_list | N.A. | return the list of apm applications
 | Applications | show | app_id | returns the detail of an application based on the app id passed
 | Applications | delete | app_id | delete an apm app on new relic based on the app id passed
-| AlertsEvents | get_list | N.A. | return the list of alert events
 | BrowserApplications | get_list | N.A. | return the list of browser applications
 | BrowserApplications | create | browser_application_name | returns the detail of a browser application based on the application name passed
 | Plugins | get_list | N.A. | return the list of plugins
