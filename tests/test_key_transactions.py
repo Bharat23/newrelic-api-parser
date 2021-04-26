@@ -1,8 +1,8 @@
 import unittest
 import os
 
-from NewRelic import Config
-from NewRelic.REST.KeyTransactions import KeyTransactions
+from NewRelicApiParser import Config
+from NewRelicApiParser.REST.KeyTransactions import KeyTransactions
 
 class KeyTransactionsTest(unittest.TestCase):
 

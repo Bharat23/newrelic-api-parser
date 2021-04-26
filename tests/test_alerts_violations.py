@@ -1,8 +1,8 @@
 import unittest
 import os
 
-from NewRelic import Config
-from NewRelic.REST.AlertsViolations import AlertsViolations
+from NewRelicApiParser import Config
+from NewRelicApiParser.REST.AlertsViolations import AlertsViolations
 
 class AlertsViolationsTest(unittest.TestCase):
 

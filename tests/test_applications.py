@@ -1,8 +1,8 @@
 import unittest
 import os
 
-from NewRelic import Config
-from NewRelic.REST.Applications import Applications
+from NewRelicApiParser import Config
+from NewRelicApiParser.REST.Applications import Applications
 
 class ApplicationTest(unittest.TestCase):
 

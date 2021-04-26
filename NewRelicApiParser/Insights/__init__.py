@@ -1,5 +1,5 @@
-from NewRelic.Base import BaseNewRelic
-from NewRelic import Config
+from NewRelicApiParser.Base import BaseNewRelic
+from NewRelicApiParser import Config
 from urllib import parse
 
 class Insights(BaseNewRelic):

@@ -22,7 +22,7 @@
     - Calling the insights API
     ```
     # import the class
-    from NewRelic.Insights import Insights
+    from NewRelicApiParser.Insights import Insights
     
     query_key = 'NRIQ-xxxxxxxxxxxxxxxxxxxx'
     # Call the api by passing the query key

@@ -1,7 +1,7 @@
 import requests
 import logging
 
-from NewRelic import Config
+from NewRelicApiParser import Config
 
 logger = logging.getLogger()
 

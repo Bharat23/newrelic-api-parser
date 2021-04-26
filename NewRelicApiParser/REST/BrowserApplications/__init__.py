@@ -1,5 +1,5 @@
-from NewRelic.Base import BaseNewRelic
-from NewRelic.CustomExceptions import ArgumentException
+from NewRelicApiParser.Base import BaseNewRelic
+from NewRelicApiParser.CustomExceptions import ArgumentException
 
 class BrowserApplications(BaseNewRelic):
 

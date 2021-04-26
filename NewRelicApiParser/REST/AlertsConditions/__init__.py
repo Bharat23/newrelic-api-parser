@@ -1,4 +1,4 @@
-from NewRelic.Base import BaseNewRelic
+from NewRelicApiParser.Base import BaseNewRelic
 
 class AlertsConditions(BaseNewRelic):
 

@@ -1,8 +1,8 @@
 import unittest
 import os
 
-from NewRelic import Config
-from NewRelic.REST.BrowserApplications import BrowserApplications
+from NewRelicApiParser import Config
+from NewRelicApiParser.REST.BrowserApplications import BrowserApplications
 
 class BrowserApplicationTest(unittest.TestCase):
 

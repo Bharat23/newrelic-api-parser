@@ -18,3 +18,9 @@ test.py
 
 # ignore build folder
 build
+
+# remove coverage
+.coverage
+
+# remove nosetest results
+*.xml

@@ -1,8 +1,8 @@
 import unittest
 import os
 
-from NewRelic import Config
-from NewRelic.REST.Plugins import Plugins
+from NewRelicApiParser import Config
+from NewRelicApiParser.REST.Plugins import Plugins
 
 class PluginsTest(unittest.TestCase):
 
