@@ -16,7 +16,7 @@ except IOError:
 setuptools.setup(
     name="newrelic-api-parser",
     package=['newrelic-api-parser'],
-    version="0.1.0",
+    version="0.3.0",
     author="Bharat Sinha",
     author_email="bharat.sinha.2307@gmail.com",
     description=description,
@@ -25,7 +25,7 @@ setuptools.setup(
     url="https://github.com/Bharat23/newrelic-api-parser",
     packages=setuptools.find_packages(),
     license='MIT',
-    keywords = ['new relic api', 'insights', 'new relic', 'apm'],
+    keywords = ['new relic api', 'insights', 'new relic', 'apm', 'graphql'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

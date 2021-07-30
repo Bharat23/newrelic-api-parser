@@ -55,6 +55,12 @@
 | --- | --- | --- | --- |
 | Insights | query | account_id, nrql | execute the passed new relic query and return the data
 
+- For GraphQl API
+
+| Module | Method | Params | Description 
+| --- | --- | --- | --- |
+| GraphQlApi | query | request_body  | execute the passed new relic graph ql query and return the data
+
 
 ## Reference
 - Please refer the [official New Relic Documentation](https://docs.newrelic.com/docs/apis/rest-api-v2/getting-started/introduction-new-relic-rest-api-v2) for more details on the endpoints
