@@ -24,3 +24,6 @@ build
 
 # remove nosetest results
 *.xml
+
+# dir for jetbrains IDEs
+.idea/

@@ -43,6 +43,7 @@ class BaseNewRelic:
         """
         try:
             response = requests.delete(url)
+            return response.json()
         except Exception as ex:
             self.handle_exception(ex)
             return None
