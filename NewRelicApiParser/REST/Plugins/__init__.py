@@ -17,5 +17,5 @@ class Plugins(BaseNewRelic):
         """
         fetch single plugin based on id provided
         """
-        url = self.BASE_URI + '/applcations/{0}.json'.format(id)
+        url = self.BASE_URI + '/plugins/{0}.json'.format(id)
         return super().get_data(url)
