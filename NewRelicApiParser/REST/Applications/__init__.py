@@ -22,7 +22,7 @@ class Applications(BaseNewRelic):
 
     def delete(self, app_id: int):
         """
-        fetch single application data
+        delete single application
         """
         url = self.BASE_URI + '/applications/{0}.json'.format(app_id)
-        return super().delete(url, app_id)
+        return super().delete(url)
