@@ -17,12 +17,12 @@ class Applications(BaseNewRelic):
         """
         fetch single application data
         """
-        url = self.BASE_URI + '/applcations/{0}.json'.format(app_id)
+        url = self.BASE_URI + '/applications/{0}.json'.format(app_id)
         return super().get_data(url)
 
     def delete(self, app_id: int):
         """
         fetch single application data
         """
-        url = self.BASE_URI + '/applcations/{0}.json'.format(app_id)
+        url = self.BASE_URI + '/applications/{0}.json'.format(app_id)
         return super().delete(url, app_id)
