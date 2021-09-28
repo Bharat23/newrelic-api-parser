@@ -42,7 +42,7 @@ class BaseNewRelic:
         override with your implementation to delete
         """
         try:
-            response = requests.delete(url)
+            response = requests.delete(url, headers=self.headers)
             return response.json()
         except Exception as ex:
             self.handle_exception(ex)
