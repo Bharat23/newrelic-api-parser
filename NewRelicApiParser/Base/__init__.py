@@ -5,12 +5,10 @@ from NewRelicApiParser import Config
 
 logger = logging.getLogger()
 
-class BaseNewRelic:
 
+class BaseNewRelic:
     def __init__(self, API_KEY: str = None):
-        self.headers = {
-            "X-Api-Key": API_KEY
-        }
+        self.headers = {"X-Api-Key": API_KEY}
         self.BASE_URI = Config.BASE_URI
 
     def get_list(self):
@@ -64,7 +62,7 @@ class BaseNewRelic:
 
     def post_data(self, url: str, data: dict = {}):
         try:
-            response = requests.post(url, headers=self.headers, data = data)
+            response = requests.post(url, headers=self.headers, data=data)
             if response.status_code == 200:
                 return response.json()
             else:

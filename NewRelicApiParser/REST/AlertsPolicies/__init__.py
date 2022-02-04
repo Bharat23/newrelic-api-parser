@@ -1,7 +1,7 @@
 from NewRelicApiParser.Base import BaseNewRelic
 
-class AlertsPolicies(BaseNewRelic):
 
+class AlertsPolicies(BaseNewRelic):
     def __init__(self, API_KEY):
         super().__init__(API_KEY)
 
@@ -9,5 +9,5 @@ class AlertsPolicies(BaseNewRelic):
         """
         fetch the alert conditions for new relic
         """
-        url = self.BASE_URI + '/alerts_policies.json'
+        url = self.BASE_URI + "/alerts_policies.json"
         return super().get_data(url, options=options)

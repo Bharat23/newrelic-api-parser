@@ -1,8 +1,7 @@
 from NewRelicApiParser.Base import BaseNewRelic
-from NewRelicApiParser.CustomExceptions import ArgumentException
+
 
 class KeyTransactions(BaseNewRelic):
-
     def __init__(self, API_KEY):
         super().__init__(API_KEY)
 
@@ -10,12 +9,12 @@ class KeyTransactions(BaseNewRelic):
         """
         fetch the key transactions for new relic
         """
-        url = self.BASE_URI + '/key_transactions.json'
+        url = self.BASE_URI + "/key_transactions.json"
         return super().get_data(url, options=options)
 
     def show(self, app_id: int) -> dict:
         """
         fetch single key transction data
         """
-        url = self.BASE_URI + '/key_transactions/{0}.json'.format(app_id)
+        url = self.BASE_URI + "/key_transactions/{0}.json".format(app_id)
         return super().get_data(url)
